@@ -1,7 +1,6 @@
 streamlit
 numpy
 pandas
-time
 datetime
 vk_api
 requests
