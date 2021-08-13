@@ -8,6 +8,18 @@ import requests
 import json
 
 #--------------------------------------------------------
+# Получение токена
+
+vk_api_v = '5.131'
+client_id = '7120669'
+scope = 'groups,stats,offline,groups,ads'
+
+token_url = f'https://oauth.vk.com/authorize?client_id={client_id}&display=page&redirect_uri=http://localhost&scope={scope}&response_type=token&v={vk_api_v}'
+st.text('Ссылка для получения токена:')
+#st.write(token_url)
+st.button('Токен', token_url)
+
+#--------------------------------------------------------
 
 #Вводим токен вк
 token = st.text_input('Вставить токен')
