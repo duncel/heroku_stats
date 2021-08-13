@@ -7,8 +7,18 @@ import vk_api
 import requests
 import json
 
-#token = '84425f061df9e16ed8b7083863ad7853803e7e14204ca7e76947bb92d1cd311b2f1f03dd7a93a90782568'
-# https://vk.com/technopark
+#--------------------------------------------------------
+# Получение токена
+
+vk_api_v = '5.131'
+client_id = '7120669'
+scope = 'groups,stats,offline,groups,ads'
+
+token_url = f'https://oauth.vk.com/authorize?client_id={client_id}&display=page&redirect_uri=http://localhost&scope={scope}&response_type=token&v={vk_api_v}'
+st.text('Ссылка для получения токена:')
+#st.write(token_url)
+st.button('Токен', token_url)
+
 #--------------------------------------------------------
 
 #Вводим токен вк
