@@ -7,8 +7,6 @@ import vk_api
 import requests
 import json
 
-#token = '84425f061df9e16ed8b7083863ad7853803e7e14204ca7e76947bb92d1cd311b2f1f03dd7a93a90782568'
-# https://vk.com/technopark
 #--------------------------------------------------------
 
 #Вводим токен вк
